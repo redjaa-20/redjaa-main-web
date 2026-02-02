@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={googleSF.variable}>
+    <html lang="en" className={montserrat.variable}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} ${googleSF.variable} antialiased`}
       >

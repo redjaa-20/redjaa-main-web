@@ -27,8 +27,13 @@ export function LandingView() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-screen relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className="min-h-dvh md:min-h-screen relative overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, scaleY: 0, transformOrigin: "top" }}
+          animate={{ opacity: 1, scaleY: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="absolute inset-0 z-0"
+        >
           <LightRays
             raysOrigin="top-center"
             raysColor="#b5b5b5"
@@ -43,8 +48,8 @@ export function LandingView() {
             noiseAmount={0}
             distortion={0}
           />
-        </div>
-        <div className="container mx-auto px-5 w-full min-h-screen flex flex-col justify-center relative z-10">
+        </motion.div>
+        <div className="container mx-auto px-5 w-full min-h-dvh md:min-h-screen flex flex-col justify-center relative z-10 pb-16">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -74,7 +79,7 @@ export function LandingView() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="text-6xl md:text-9xl leading-none font-bold tracking-tight -ml-1 md:-ml-2 mb-4 md:mb-8"
+              className="text-[4rem] md:text-9xl leading-none font-bold tracking-tight -ml-1 md:-ml-2 mb-10 md:mb-8"
             >
               <span className="bg-clip-text text-transparent bg-linear-to-tr from-white to-[#b5b5b5]">
                 Reinaldi
@@ -97,7 +102,7 @@ export function LandingView() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="text-6xl md:text-9xl leading-none font-bold tracking-tight md:text-right"
+              className="text-[4rem] md:text-9xl leading-none font-bold tracking-tight md:text-right"
             >
               <span className="bg-clip-text text-transparent bg-linear-to-tr from-white to-[#b5b5b5]">
                 Web
@@ -119,7 +124,7 @@ export function LandingView() {
                 transition: { duration: 0.5, delay: 0.2 },
               },
             }}
-            className="w-full absolute bottom-5 md:bottom-10 left-0 right-0 flex flex-col md:flex-row md:items-center justify-between px-5"
+            className="w-full absolute bottom-8 md:bottom-10 left-0 right-0 flex flex-col md:flex-row md:items-center justify-between px-5"
           >
             <div className="hidden md:flex items-center gap-3">
               <div className="group relative z-10 flex items-center justify-center animate-float">
