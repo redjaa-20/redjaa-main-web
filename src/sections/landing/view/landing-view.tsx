@@ -10,7 +10,7 @@ import Image from "next/image";
 // ------------------------------------------------------------
 
 const PROJECTS_ROW_1 = [
-  "/assets/images/thumbnail-project/kontener.png",
+  "/assets/images/portfolio/kontener.png",
   "/assets/images/thumbnail-project/2.png",
   "/assets/images/thumbnail-project/3.png",
 ];
