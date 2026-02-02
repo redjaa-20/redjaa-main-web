@@ -30,7 +30,7 @@ const montserrat = Montserrat({
 });
 
 const googleSF = Google_Sans_Flex({
-  variable: "--font-google-sans-flex",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={montserrat.variable}>
+    <html lang="en" className={googleSF.variable}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} ${googleSF.variable} antialiased`}
       >
