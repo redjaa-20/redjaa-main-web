@@ -10,14 +10,13 @@ import Image from "next/image";
 // ------------------------------------------------------------
 
 const PROJECTS_ROW_1 = [
-  "/assets/images/thumbnail-project/1.png",
+  "/assets/images/thumbnail-project/kontener.png",
   "/assets/images/thumbnail-project/2.png",
   "/assets/images/thumbnail-project/3.png",
 ];
 
 const PROJECTS_ROW_2 = [
   "/assets/images/thumbnail-project/4.png",
-  // "/assets/images/thumbnail-project/5.jpg",
   "/assets/images/thumbnail-project/6.png",
   "/assets/images/thumbnail-project/7.png",
 ];
