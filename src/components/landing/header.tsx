@@ -39,18 +39,18 @@ export function LandingHeader() {
       }`}
     >
       <Link href={paths.landing.root}>
-        <h1 className="text-2xl font-bold">R</h1>
+        <h1 className="text-3xl font-bold">R</h1>
       </Link>
       <div className="flex items-center gap-5">
-        {/* <Link href="/" className="text-sm">
-            Home
-          </Link> */}
+        <Link href="/" className="text-sm">
+          Home
+        </Link>
         <Link href={paths.landing.portfolio} className="text-sm">
           Portfolio
         </Link>
-        <Link href={paths.landing.about} className="text-sm">
+        {/* <Link href={paths.landing.about} className="text-sm">
           About
-        </Link>
+        </Link> */}
         {/* <Button
             variant="ghost"
             className="font-normal hover:bg-transparent hover:text-background"

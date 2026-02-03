@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
-import { PortfolioView } from "src/sections/portfolio/view";
+import { NotFoundView } from "src/sections/404/view";
 
 // ------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: `Portfolio | Reinaldi Djamil`,
+  title: `404 Not Found | Reinaldi Djamil`,
   description: "",
 };
 
 // ------------------------------------------------------------
 
 export default function Page() {
-  return <PortfolioView />;
+  return <NotFoundView />;
 }
