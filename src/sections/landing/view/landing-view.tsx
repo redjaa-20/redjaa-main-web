@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "src/components/ui/button";
 import Image from "next/image";
 import LightRays from "src/components/LightRays";
+import { GridSpotlight } from "src/components/GridSpotLight";
 
 // ------------------------------------------------------------
 
@@ -28,27 +29,16 @@ export function LandingView() {
     <>
       {/* Hero */}
       <section className="min-h-dvh md:min-h-screen relative overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, scaleY: 0, transformOrigin: "top" }}
-          animate={{ opacity: 1, scaleY: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute inset-0 z-0"
-        >
-          <LightRays
-            raysOrigin="top-center"
-            raysColor="#b5b5b5"
-            raysSpeed={1}
-            lightSpread={1}
-            rayLength={1.5}
-            pulsating={false}
-            fadeDistance={1}
-            saturation={1}
-            followMouse={false}
-            mouseInfluence={0.1}
-            noiseAmount={0}
-            distortion={0}
+        <div className="absolute inset-0 z-0">
+          <GridSpotlight
+            gridSize={150}
+            gridColor="rgba(255, 255, 255, 0.5)"
+            gridStrokeWidth={2}
+            spotlightCount={2}
+            duration={15}
+            className=""
           />
-        </motion.div>
+        </div>
         <div className="container mx-auto px-5 w-full min-h-dvh md:min-h-screen flex flex-col justify-center relative z-10 pb-16">
           <motion.div
             initial="hidden"
